@@ -46,27 +46,37 @@ public class Main {
         }
         System.out.println(" ");
         System.out.println("Задача №3");
-        for (int i = nums.length - 1; i >= 0; i--) {
-            System.out.print(nums[i] + " ");
-        }
-        System.out.println(" ");
-        for (int i = board.length - 1; i >= 0; i--) {
-            System.out.print(board[i] + " ");
-        }
-        System.out.println(" ");
-        for (int a = shot.length - 1; a >= 0; a--) {
-            System.out.print(shot[a] + " ");
-        }
-        System.out.println(" ");
-        System.out.println("Задача №4");
-        int[] odd = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-
-        for (int i = 0; i < odd.length; i++) {
-            if (odd[i] % 2 != 0) {
-                odd[i] += 1;
+        for (int i = nums.length - 1 ; i >= 0; i--) {
+            System.out.print(nums[i]);
+            if (i > 0) {
+                System.out.print(", ");
             }
+            }
+            System.out.println(" ");
+            for (int a = board.length - 1; a >= 0; a--) {
+                System.out.print(board[a]);
+                if (a > 0) {
+                    System.out.print(", ");
+                }
+            }
+            System.out.println(" ");
+            for (int a = shot.length - 1; a >= 0; a--) {
+                System.out.print(shot[a]);
+                if (a > 0) {
+                    System.out.print(", ");
+                }
+            }
+            System.out.println(" ");
+            System.out.println("Задача №4");
+            int[] odd = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+
+            for (int b = 0; b < odd.length; b++) {
+                if (odd[b] % 2 != 0) {
+                    odd[b] += 1;
+                }
+            }
+            System.out.println(Arrays.toString(odd));
         }
-        System.out.println(Arrays.toString(odd));
     }
-}
+
 
